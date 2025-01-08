@@ -2,12 +2,12 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="bg-black w-full  md:min-h-screen px-4 sm:px-[5vw] md:px-[7vw]">
+    <div className="bg-black w-full md:min-h-screen px-4 sm:px-[5vw] md:px-[7vw]">
       <div className="flex flex-col lg:flex-row lg:gap-10 justify-around items-center p-4 lg:p-0">
         {/* Image Section */}
-        <div className="bg-neutral-900 border-[1px] border-white/20 w-full lg:w-[35%] flex items-center justify-center mt-6 lg:mt-24 rounded-xl shadow-md ml-[30px] min-w-[250px]  shadow-blue-700">
+        <div className="bg-neutral-900  border-[1px] border-white/20 overflow-hidden w-full lg:w-[35%] flex items-center justify-center mt-6 lg:mt-24 rounded-xl shadow-md md:ml-[30px] min-w-[250px]    shadow-blue-700">
           <img
-            className="rounded-xl border-[1px] border-white/20 w-full h-full object-cover"
+            className="rounded-xl border-[1px]  border-white/20 w-full h-full object-cover"
             style={{
               minWidth: '350px', // Minimum width to prevent shrinking
               minHeight: '500px', // Minimum height to prevent shrinking

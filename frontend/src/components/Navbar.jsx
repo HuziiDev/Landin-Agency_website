@@ -102,7 +102,7 @@ const Navbar = () => {
         backgroundImage: "linear-gradient(150deg, #000000, #000080)",
         backgroundSize: "200% 200%",
       }}
-          className="absolute top-24 left-0 w-full h-96 bg-gradient-to-b from-zinc-900 via-blue-900 to-gray-900 flex flex-col  gap-2 p-4 transition-transform duration-300 ease-in-out"
+          className="absolute top-18 left-0 w-full h-96 bg-gradient-to-b from-zinc-900 via-blue-900 to-gray-900 flex flex-col  gap-2 p-4 transition-transform duration-300 ease-in-out"
         >
           <a className="text-xl text-gray-300 w-full text-center py-2" href="">
             Home

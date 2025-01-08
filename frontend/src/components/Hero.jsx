@@ -15,7 +15,7 @@ const Hero = () => {
         backgroundImage: "linear-gradient(20deg, #000000, #00008B)",
         backgroundSize: "200% 200%",
       }}
-      className="h-[750px] md:h-screen bg-black"
+      className="h-[750px] md:min-h-screen bg-black"
     >
       <div className="flex flex-col text-white px-6 sm:px-12 md:px-24 lg:px-36 xl:px-48">
         {/* New Tag */}
