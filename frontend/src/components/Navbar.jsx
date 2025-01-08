@@ -20,7 +20,7 @@ const Navbar = () => {
       }}
     >
       {/* Navbar */}
-      <div className="flex bg-transparent min-h-[110px] items-center justify-between border-1 border-white   shadow-md px-4 md:px-12">
+      <div className="flex bg-transparent h-[70px] md:min-h-[110px] items-center justify-between border-1 border-white   shadow-md px-4 md:px-12">
         {/* Logo and Links */}
         <div className="flex items-center md:pl-12 lg:pl-24 xl:pl-32 gap-16">
           <img
