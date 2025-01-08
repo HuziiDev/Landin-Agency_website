@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="flex flex-col text-white px-6 sm:px-12 md:px-24 lg:px-36 xl:px-48">
         {/* New Tag */}
         <div className="flex w-64 sm:w-64 bg-neutral-500/20 border border-gray-400 mt-16 sm:mt-32 rounded p-2 gap-4 sm:gap-8">
-          <button className="text-sm sm:text-base bg-blue-700 px-3 sm:px-4">New</button>
+          <button className=" text-sm sm:text-base bg-blue-700 px-3 sm:px-4">New</button>
           <p className="text-sm sm:text-base font-semibold text-slate-300">
             No.1 studio of 2025
           </p>

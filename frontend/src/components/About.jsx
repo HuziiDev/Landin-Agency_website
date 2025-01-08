@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         {/* Text Content Section */}
-        <div className="mt-6 lg:mt-28 flex flex-col text-white w-full lg:w-auto px-4 lg:px-0 ml-[30px]">
+        <div className="mt-16 lg:mt-28 flex flex-col text-white w-full lg:w-auto lg:px-0 md:ml-[30px]">
           {/* Button */}
           <button className="flex items-center w-44 justify-center gap-4 px-4 rounded-lg font-semibold text-lg shadow-md shadow-blue-700 py-2 bg-zinc-800/40">
             <div className="bg-white w-2 h-2 rounded-full"></div>
