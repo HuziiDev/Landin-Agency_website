@@ -9,7 +9,7 @@ const Results = () => {
             <div className=" w-2 h-2 bg-white rounded-full"></div>
             Results
           </button>
-            <h1 className='pt-8 text-[30px] md:text-[50px] text-white px-5'>Delivering Tangible Results</h1>
+            <h1 className='pt-8 text-[30px] md:text-[50px] text-white pl-6 md:pl-16'>Delivering Tangible Results</h1>
             <h1 className='text-[30px] md:text-[50px] text-neutral-400 px-5' >That Propel Your Sucess</h1>
 
             <p className='pt-4 px-5 text-neutral-400 text-base'>Effortlessly connect with your favourite tool, Whether it's your CRM or email marketing platform.</p>
