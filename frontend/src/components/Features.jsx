@@ -1,4 +1,5 @@
 import React from 'react'
+import FeaturesCard from './FeaturesCard'
 
 const Features = () => {
   return (
@@ -24,182 +25,42 @@ const Features = () => {
 
 <div className="w-[90%] mx-auto flex flex-wrap justify-center items-center gap-6">
   {/* Card Container */}
-  <div className="card text-white max-w-[90%] md:max-w-[30%] lg:max-w-[30%] flex flex-col justify-center bg-custom-blue-gradient shadow-md shadow-blue-700 rounded-xl mb-6 mt-6">
-    <div className="images flex justify-between pl-2 pt-4">
-      <img
-        className="w-10 h-10"
-        src="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
-        alt=""
-      />
-      <img
-        className="w-10 h-8 mr-2"
-        src="https://img.icons8.com/?size=100&id=52360&format=png&color=000000"
-        alt=""
-      />
-    </div>
-
-    <div className="flex mt-10 gap-6 pl-2">
-      <h2 className="font-semibold">Boost Your Revenue</h2>
-
-      <button className="bg-blue-700 px-3 font-semibold shadow-md shadow-blue-600 py-1 rounded-lg text-sm">
-        Pro
-      </button>
-    </div>
-    <h2 className="text-neutral-400 font-semibold pl-2">Increase Profits</h2>
-
-    <div className="border-1 h-[1px] border-white w-[40%] bg-white/30 mt-5 pl-2"></div>
-
-    <p className="text-neutral-400 mt-4 mb-6 pl-2 text-sm w-[90%]">
-      Unlock new revenue streams with data-driven Strategies and marketing
-    </p>
-  </div>
-
-  {/* Repeat for Multiple Cards */}
-  <div className="card text-white max-w-[90%] md:max-w-[30%] lg:max-w-[30%] flex flex-col justify-center bg-custom-blue-gradient shadow-md shadow-blue-700 rounded-xl mb-6 mt-6">
-    <div className="images flex justify-between pl-2 pt-4">
-      <img
-        className="w-10 h-10"
-        src="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
-        alt=""
-      />
-      <img
-        className="w-10 h-8 mr-2"
-        src="https://img.icons8.com/?size=100&id=52360&format=png&color=000000"
-        alt=""
-      />
-    </div>
-
-    <div className="flex mt-10 gap-6 pl-2">
-      <h2 className="font-semibold">Boost Your Revenue</h2>
-
-      <button className="bg-blue-700 px-3 font-semibold shadow-md shadow-blue-600 py-1 rounded-lg text-sm">
-        Pro
-      </button>
-    </div>
-    <h2 className="text-neutral-400 font-semibold pl-2">Increase Profits</h2>
-
-    <div className="border-1 h-[1px] border-white w-[40%] bg-white/30 mt-5 pl-2"></div>
-
-    <p className="text-neutral-400 mt-4 mb-6 pl-2 text-sm w-[90%]">
-      Unlock new revenue streams with data-driven Strategies and marketing
-    </p>
-  </div>
-  <div className="card text-white max-w-[90%] md:max-w-[30%] lg:max-w-[30%] flex flex-col justify-center bg-custom-blue-gradient shadow-md shadow-blue-700 rounded-xl mb-6 mt-6">
-    <div className="images flex justify-between pl-2 pt-4">
-      <img
-        className="w-10 h-10"
-        src="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
-        alt=""
-      />
-      <img
-        className="w-10 h-8 mr-2"
-        src="https://img.icons8.com/?size=100&id=52360&format=png&color=000000"
-        alt=""
-      />
-    </div>
-
-    <div className="flex mt-10 gap-6 pl-2">
-      <h2 className="font-semibold">Boost Your Revenue</h2>
-
-      <button className="bg-blue-700 px-3 font-semibold shadow-md shadow-blue-600 py-1 rounded-lg text-sm">
-        Pro
-      </button>
-    </div>
-    <h2 className="text-neutral-400 font-semibold pl-2">Increase Profits</h2>
-
-    <div className="border-1 h-[1px] border-white w-[40%] bg-white/30 mt-5 pl-2"></div>
-
-    <p className="text-neutral-400 mt-4 mb-6 pl-2 text-sm w-[90%]">
-      Unlock new revenue streams with data-driven Strategies and marketing
-    </p>
-  </div>
-  <div className="card text-white max-w-[90%] md:max-w-[30%] lg:max-w-[30%] flex flex-col justify-center bg-custom-blue-gradient shadow-md shadow-blue-700 rounded-xl mb-6 mt-6">
-    <div className="images flex justify-between pl-2 pt-4">
-      <img
-        className="w-10 h-10"
-        src="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
-        alt=""
-      />
-      <img
-        className="w-10 h-8 mr-2"
-        src="https://img.icons8.com/?size=100&id=52360&format=png&color=000000"
-        alt=""
-      />
-    </div>
-
-    <div className="flex mt-10 gap-6 pl-2">
-      <h2 className="font-semibold">Boost Your Revenue</h2>
-
-      <button className="bg-blue-700 px-3 font-semibold shadow-md shadow-blue-600 py-1 rounded-lg text-sm">
-        Pro
-      </button>
-    </div>
-    <h2 className="text-neutral-400 font-semibold pl-2">Increase Profits</h2>
-
-    <div className="border-1 h-[1px] border-white w-[40%] bg-white/30 mt-5 pl-2"></div>
-
-    <p className="text-neutral-400 mt-4 mb-6 pl-2 text-sm w-[90%]">
-      Unlock new revenue streams with data-driven Strategies and marketing
-    </p>
-  </div>
-  <div className="card text-white max-w-[90%] md:max-w-[30%] lg:max-w-[30%] flex flex-col justify-center bg-custom-blue-gradient shadow-md shadow-blue-700 rounded-xl mb-6 mt-6">
-    <div className="images flex justify-between pl-2 pt-4">
-      <img
-        className="w-10 h-10"
-        src="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
-        alt=""
-      />
-      <img
-        className="w-10 h-8 mr-2"
-        src="https://img.icons8.com/?size=100&id=52360&format=png&color=000000"
-        alt=""
-      />
-    </div>
-
-    <div className="flex mt-10 gap-6 pl-2">
-      <h2 className="font-semibold">Boost Your Revenue</h2>
-
-      <button className="bg-blue-700 px-3 font-semibold shadow-md shadow-blue-600 py-1 rounded-lg text-sm">
-        Pro
-      </button>
-    </div>
-    <h2 className="text-neutral-400 font-semibold pl-2">Increase Profits</h2>
-
-    <div className="border-1 h-[1px] border-white w-[40%] bg-white/30 mt-5 pl-2"></div>
-
-    <p className="text-neutral-400 mt-4 mb-6 pl-2 text-sm w-[90%]">
-      Unlock new revenue streams with data-driven Strategies and marketing
-    </p>
-  </div>
-  <div className="card text-white max-w-[90%] md:max-w-[30%] lg:max-w-[30%] flex flex-col justify-center bg-custom-blue-gradient shadow-md shadow-blue-700 rounded-xl mb-6 mt-6">
-    <div className="images flex justify-between pl-2 pt-4">
-      <img
-        className="w-10 h-10"
-        src="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
-        alt=""
-      />
-      <img
-        className="w-10 h-8 mr-2"
-        src="https://img.icons8.com/?size=100&id=52360&format=png&color=000000"
-        alt=""
-      />
-    </div>
-
-    <div className="flex mt-10 gap-6 pl-2">
-      <h2 className="font-semibold">Boost Your Revenue</h2>
-
-      <button className="bg-blue-700 px-3 font-semibold shadow-md shadow-blue-600 py-1 rounded-lg text-sm">
-        Pro
-      </button>
-    </div>
-    <h2 className="text-neutral-400 font-semibold pl-2">Increase Profits</h2>
-
-    <div className="border-1 h-[1px] border-white w-[40%] bg-white/30 mt-5 pl-2"></div>
-
-    <p className="text-neutral-400 mt-4 mb-6 pl-2 text-sm w-[90%]">
-      Unlock new revenue streams with data-driven Strategies and marketing
-    </p>
-  </div>
+         <FeaturesCard 
+         img1="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
+        title1="Boost Your Revenue"
+        title2="Increase Profits"
+        desc="Unlock new revenue streams with data-driven Strategies and marketing"
+         />
+         <FeaturesCard 
+         img1="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
+        title1="Boost Your Revenue"
+        title2="Increase Profits"
+        desc="Unlock new revenue streams with data-driven Strategies and marketing"
+         />
+         <FeaturesCard 
+         img1="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
+        title1="Boost Your Revenue"
+        title2="Increase Profits"
+        desc="Unlock new revenue streams with data-driven Strategies and marketing"
+         />
+         <FeaturesCard 
+         img1="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
+        title1="Boost Your Revenue"
+        title2="Increase Profits"
+        desc="Unlock new revenue streams with data-driven Strategies and marketing"
+         />
+         <FeaturesCard 
+         img1="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
+        title1="Boost Your Revenue"
+        title2="Increase Profits"
+        desc="Unlock new revenue streams with data-driven Strategies and marketing"
+         />
+         <FeaturesCard 
+         img1="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
+        title1="Boost Your Revenue"
+        title2="Increase Profits"
+        desc="Unlock new revenue streams with data-driven Strategies and marketing"
+         />
 </div>
 
     </div>
