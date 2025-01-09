@@ -14,7 +14,7 @@ const About = () => {
               maxWidth: '100%', // Ensure it doesn't overflow the container
               maxHeight: 'auto', // Maintain aspect ratio
             }}
-            src="https://framerusercontent.com/images/Qnjbg5sx80zqC8P7TMF9g3DgCA.jpeg?scale-down-to=512"
+            src="https://images.stockcake.com/public/8/2/5/82559b2e-0d40-473e-bc0b-4304b964b751_large/office-working-hours-stockcake.jpg"
             alt="About Image"
           />
         </div>

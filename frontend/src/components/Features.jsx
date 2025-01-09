@@ -23,7 +23,7 @@ const Features = () => {
 </div>
 
 
-<div className="w-[90%] mx-auto flex flex-wrap justify-center items-center gap-6">
+<div className="w-[90%] mx-auto flex flex-wrap justify-center items-center  md:gap-6">
   {/* Card Container */}
          <FeaturesCard 
          img1="https://img.icons8.com/?size=100&id=81068&format=png&color=000000"
