@@ -12,7 +12,7 @@ const App = () => {
         x: e.clientX,
         y: e.clientY,
         duration: 0.8, // Smoothness of the cursor movement
-        ease: 'power2.out',
+        ease: 'back.out',
       });
     };
 
@@ -31,7 +31,7 @@ const App = () => {
       <div
         ref={cursorRef}
         className="fixed h-[20px] w-[20px] bg-white rounded-full pointer-events-none z-50"
-        style={{ transform: 'translate(-50%, -50%)' }} // Center cursor at mouse
+        
       ></div>
 
       {/* Main Content */}
