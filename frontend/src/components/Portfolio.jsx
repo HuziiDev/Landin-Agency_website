@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Portfolio = () => {
+  
   return (
     <div className='bg-black w-full'>
         <div className='text-white flex flex-col justify-center items-center pt-20 '>
@@ -20,7 +21,7 @@ const Portfolio = () => {
     </button>
     </div>
 
-    <div className="card_container sticky  w-[90%] mx-auto flex flex-col justify-center items-center">
+    <div className="card_container   w-[90%] mx-auto flex flex-col justify-center items-center">
   <div className="card relative w-[90%] h-80 md:h-[90%] flex flex-col justify-center items-center bg-zinc-900 mb-10 rounded-lg">
     <img
       className="w-[95%] md:w-[98%] md:pb-2 md:pt-2  h-[95%] rounded-lg"
