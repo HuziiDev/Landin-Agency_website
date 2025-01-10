@@ -6,6 +6,7 @@ import Results from '../components/Results'
 import Features from '../components/Features'
 import Portfolio from '../components/Portfolio'
 import String from '../components/String'
+import OurServices from '../components/OurServices'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Results/>
         <Features/>
         <Portfolio/>
+        <OurServices/>
     </>
   )
 }
