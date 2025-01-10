@@ -7,6 +7,7 @@ import Features from '../components/Features'
 import Portfolio from '../components/Portfolio'
 import String from '../components/String'
 import OurServices from '../components/OurServices'
+import JoinUs from '../components/JoinUs'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Features/>
         <Portfolio/>
         <OurServices/>
+        <JoinUs/>
     </>
   )
 }
