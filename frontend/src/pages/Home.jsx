@@ -13,6 +13,7 @@ import Test from '../components/Test'
 const Home = () => {
   return (
     <>
+       <Test/>
         <Navbar/>
         <Hero/>
         <String/>
@@ -22,7 +23,7 @@ const Home = () => {
         <Portfolio/>
         <OurServices/>
         <JoinUs/>
-        <Test/>
+     
     </>
   )
 }
