@@ -26,7 +26,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen bg-black relative ">
+    <div className="w-full min-h-screen bg-black relative ">
       {/* Custom Cursor */}
       <div
         ref={cursorRef}
