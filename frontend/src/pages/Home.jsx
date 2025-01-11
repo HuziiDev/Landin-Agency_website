@@ -8,12 +8,12 @@ import Portfolio from '../components/Portfolio'
 import String from '../components/String'
 import OurServices from '../components/OurServices'
 import JoinUs from '../components/JoinUs'
-import Test from '../components/Test'
+
 
 const Home = () => {
   return (
     <>
-       <Test/>
+       
         <Navbar/>
         <Hero/>
         <String/>
