@@ -8,6 +8,7 @@ import Portfolio from '../components/Portfolio'
 import String from '../components/String'
 import OurServices from '../components/OurServices'
 import JoinUs from '../components/JoinUs'
+import Marquee from '../components/Marquee'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
        
         <Navbar/>
         <Hero/>
+        <Marquee/>
         <String/>
         <About/>
         <Results/>
