@@ -15,7 +15,7 @@ const Hero = () => {
         backgroundImage: "linear-gradient(20deg, #000000, #051225)",
         backgroundSize: "200% 200%",
       }}
-      className="h-[750px]  md:max-h-[90vh] bg-black"
+      className="h-[750px]  md:max-h-[100vh] bg-black"
     >
       <motion.div className="flex flex-col text-white px-6 sm:px-12 md:px-24 lg:px-36 xl:px-48">
         {/* New Tag */}
@@ -23,7 +23,7 @@ const Hero = () => {
         initial={{opacity:0}}
             animate={{opacity:1}}
              transition={{duration:1,ease:"anticipate" }}
-        className="flex w-64 sm:w-64 bg-neutral-500/20 border border-gray-400 mt-16 sm:mt-32 rounded p-2 gap-4 sm:gap-8">
+        className="flex w-64 sm:w-64 bg-neutral-500/20 border border-gray-400 mt-16  rounded p-2 gap-4 sm:gap-8">
           <motion.button 
           
            className=" text-sm sm:text-base bg-blue-700 px-3 sm:px-4">New</motion.button>
@@ -38,21 +38,21 @@ const Hero = () => {
            initial={{opacity:0}}
            animate={{opacity:1}}
            transition={{duration:2,ease:"linear" }}
-           className="text-white text-4xl sm:text-5xl md:text-[70px] font-semibold">
+           className="text-white text-4xl sm:text-5xl md:text-[70px] lg:text-[90px] font-medium">
             Premium Agency
           </motion.h1>
           <motion.h1
           initial={{opacity:0}}
            animate={{opacity:1}}
            transition={{duration:3,ease:"linear" }}
-           className="text-white text-4xl sm:text-5xl md:text-[70px] font-semibold">
+           className="text-white text-4xl sm:text-5xl md:text-[70px] lg:text-[90px] font-medium">
             for Creatives
           </motion.h1>
           <motion.p 
            initial={{opacity:0}}
            animate={{opacity:1}}
            transition={{duration:2,ease:"backIn" }}
-          className="text-sm sm:text-base md:text-lg w-full md:w-[70%] lg:w-[60%] text-neutral-400">
+          className="text-sm sm:text-base md:text-lg w-full md:w-[60%] lg:w-[40%] text-neutral-400">
             We specialize in crafting unique digital presence that help businesses grow and
             stand out in their industries.
           </motion.p>

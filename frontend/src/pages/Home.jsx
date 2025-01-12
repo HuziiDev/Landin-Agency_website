@@ -9,6 +9,7 @@ import String from '../components/String'
 import OurServices from '../components/OurServices'
 import JoinUs from '../components/JoinUs'
 import Marquee from '../components/Marquee'
+import Testimonials from '../components/Testimonials'
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
         <Portfolio/>
         <OurServices/>
         <JoinUs/>
+        <Testimonials/>
      
     </>
   )

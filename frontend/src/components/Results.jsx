@@ -55,7 +55,7 @@ const Results = () => {
         transition={{
           ease: "linear",
           repeat: Infinity,
-          duration: 10, // Adjust duration to control speed
+          duration: 50, // Adjust duration to control speed
         }}
       >
         {/* Card 1 */}
@@ -96,7 +96,7 @@ const Results = () => {
             </p>
             <div className="flex gap-4 mt-4">
               <span className="text-sm rounded-lg bg-zinc-800 border-[1px] border-gray-600 px-3 py-2">
-                70% Efficiency Boost
+                70% Efficiency 
               </span>
               <span className="text-sm rounded-lg bg-zinc-800 border-[1px] border-gray-600 px-3 py-2">
                 50% Revenue Growth
