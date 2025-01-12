@@ -10,6 +10,7 @@ import OurServices from '../components/OurServices'
 import JoinUs from '../components/JoinUs'
 import Marquee from '../components/Marquee'
 import Testimonials from '../components/Testimonials'
+import Footer from '../components/Footer'
 
 
 const Home = () => {
@@ -27,6 +28,8 @@ const Home = () => {
         <OurServices/>
         <JoinUs/>
         <Testimonials/>
+
+        <Footer/>
      
     </>
   )
