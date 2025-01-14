@@ -1,8 +1,21 @@
 import React from "react";
+import {motion} from 'framer-motion'
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-t  from-black via-gray-900 to-blue-900 text-white py-10">
+    <motion.footer
+    initial={{ backgroundPosition: "0% 50%" }}
+      animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
+      transition={{
+        duration: 8,
+        repeat: Infinity,
+        ease: "linear",
+      }}
+      style={{
+        backgroundImage: "linear-gradient(20deg, #000000, #051225)",
+        backgroundSize: "200% 200%",
+      }}
+     className=" text-white py-10 mt-24">
       <div className="container  px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-[90%] mx-auto">
         {/* Branding Section */}
         <div>
@@ -65,7 +78,7 @@ const Footer = () => {
       <div className="mt-10 text-center text-gray-500">
         © 2025 Landin Web Agency. All rights reserved.
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
