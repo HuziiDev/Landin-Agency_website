@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const handleDropdownClick = () =>{
+    setIsMenuOpen(false)
+  }
   return (
     <motion.div
       className="relative"
@@ -24,26 +26,27 @@ const Navbar = () => {
       <div className="flex bg-transparent h-[70px] md:min-h-[110px] items-center justify-between border-1 border-white shadow-blue-600   shadow-md px-4 md:px-12">
         {/* Logo and Links */}
         <div className="flex items-center md:pl-12 lg:pl-24 xl:pl-32 gap-16">
-          <img
+         <Link to="/"> <img
            width={70}
           
             src="https://framerusercontent.com/images/5Hr06xe33iekloyBybSHJa4e8.svg"
             alt="logo"
           />
+          </Link>
 
           <div className="hidden md:flex gap-8 items-center">
-            <a className="text-xl text-gray-300" href="">
+           <Link to='/' className="text-xl text-gray-400"  >    
               Home
-            </a>
-            <a className="text-xl text-gray-400" href="">
+              </Link>
+           <Link to='/about' className="text-xl text-gray-400"> 
               About
-            </a>
+            
+            </Link>
             <a className="text-xl text-gray-400" href="">
               Portfolio
             </a>
-        <Link to='/contact'>    <a className="text-xl text-gray-400" href="">
+        <Link className="text-xl text-gray-400" to='/contact'>    
               Contact
-            </a>
             </Link>
             <a className="text-xl text-gray-400" href="">
               FAQ
@@ -106,18 +109,18 @@ const Navbar = () => {
       }}
           className="absolute top-18 left-0 w-full h-96 bg-gradient-to-b from-zinc-900 via-blue-900 to-gray-900 flex flex-col  gap-2 p-4 transition-transform duration-300 ease-in-out"
         >
-          <a className="text-xl text-gray-300 w-full text-center py-2" href="">
+           <Link onClick={handleDropdownClick} to='/contact' className="text-xl text-gray-300 w-full text-center py-2" href="">
             Home
-          </a>
+          </Link>
           <a className="text-xl text-gray-300 w-full text-center py-2" href="">
             About
           </a>
           <a className="text-xl text-gray-300 w-full text-center py-2" href="">
             Portfolio
           </a>
-          <a className="text-xl text-gray-300 w-full text-center py-2" href="">
+          <Link onClick={handleDropdownClick} to='/contact' className="text-xl text-gray-300 w-full text-center py-2" href="">
             Contact
-          </a>
+          </Link>
           <a className="text-xl text-gray-300 w-full text-center py-2" href="">
             FAQ
           </a>

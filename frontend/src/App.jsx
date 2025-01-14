@@ -5,6 +5,7 @@ import {Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
+import About from './components/About';
 const App = () => {
   const cursorRef = useRef(null); // Ref for the custom cursor
 
@@ -42,6 +43,7 @@ const App = () => {
        <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/about' element={<About/>}/>
        </Routes>
        <Footer/>
     </div>

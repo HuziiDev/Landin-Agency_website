@@ -15,7 +15,7 @@ const ContactHero = () => {
         backgroundImage: 'linear-gradient(20deg, #000000, #051225)',
         backgroundSize: '200% 200%',
       }}
-      className="h-[90vh] bg-black  pt-2  "
+      className="h-[60vh] md:h-[90vh] bg-black  pt-2  "
     >
       <motion.div className="flex flex-col text-white items-center">
         {/* New Tag */}
