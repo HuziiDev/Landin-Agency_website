@@ -1,6 +1,6 @@
 import React from 'react'
 import PortfilioCard from './PortfilioCard'
-
+import fanfit from '../assets/fanfit.png'
 const Portfolio = () => {
   
   return (
@@ -24,7 +24,7 @@ const Portfolio = () => {
 
     <div className="card_container   w-[90%] mx-auto flex flex-col justify-center items-center">
       <PortfilioCard
-        img="https://imteg.weebly.com/uploads/5/4/9/8/54982803/2421183_orig.jpg"
+        img={fanfit}
         title="Audi"
         tech1="React"
         tech2="Node"
