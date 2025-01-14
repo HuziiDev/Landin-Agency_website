@@ -1,15 +1,33 @@
-import React from "react";
-
+import React,{useRef} from "react";
+import emailjs from '@emailjs/browser';
 import { MdOutlineEmail } from "react-icons/md";
 import { IoPinOutline, IoPhonePortraitOutline } from "react-icons/io5";
 
 const ContactForm = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_pozns9q', 'template_csibt4g', form.current, {
+          publicKey: '_yHvvyCmEDpptH9Fx',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
   return (
     <div
      
      className="flex flex-col md:flex-row justify-center items-center bg-black min-h-screen mt-24 gap-y-16 md:gap-x-24">
       {/* Form Section */}
-      <form className="w-[90%] md:w-[70%] max-w-[800px] bg-neutral-900 shadow-lg rounded-xl p-8">
+      <form ref={form} onSubmit={sendEmail} className="w-[90%] md:w-[70%] max-w-[800px] bg-neutral-900 shadow-lg rounded-xl p-8">
         {/* First Name and Last Name */}
         <div className="flex flex-wrap gap-4 mb-6">
           <div className="w-full md:w-[45%]">
@@ -22,6 +40,7 @@ const ContactForm = () => {
             <input
               type="text"
               id="firstName"
+              name="first-name"
               className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
               placeholder="Enter your first name"
             />
@@ -34,6 +53,7 @@ const ContactForm = () => {
               Last Name
             </label>
             <input
+            name="last-name"
               type="text"
               id="lastName"
               className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
@@ -53,6 +73,7 @@ const ContactForm = () => {
           <input
             type="email"
             id="email"
+            name="user-email"
             className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
             placeholder="Enter your email"
           />
@@ -106,6 +127,7 @@ const ContactForm = () => {
             Message
           </label>
           <textarea
+          name="message"
             id="message"
             rows="5"
             className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-400"

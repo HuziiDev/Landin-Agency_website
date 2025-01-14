@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,9 +41,10 @@ const Navbar = () => {
             <a className="text-xl text-gray-400" href="">
               Portfolio
             </a>
-            <a className="text-xl text-gray-400" href="">
+        <Link to='/contact'>    <a className="text-xl text-gray-400" href="">
               Contact
             </a>
+            </Link>
             <a className="text-xl text-gray-400" href="">
               FAQ
             </a>
