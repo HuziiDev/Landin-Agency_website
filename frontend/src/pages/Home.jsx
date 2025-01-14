@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
        
-        <Navbar/>
+        
         <Hero/>
         <Marquee/>
         <String/>
@@ -29,7 +29,7 @@ const Home = () => {
         <JoinUs/>
         <Testimonials/>
 
-        <Footer/>
+      
      
     </>
   )

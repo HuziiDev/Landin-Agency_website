@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import Home from './pages/Home';
 import gsap from 'gsap';
-
+import {Route, Routes} from 'react-router-dom'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Contact from './pages/Contact';
 const App = () => {
   const cursorRef = useRef(null); // Ref for the custom cursor
 
@@ -35,7 +38,12 @@ const App = () => {
       ></div>
 
       {/* Main Content */}
-      <Home />
+      <Navbar/>
+       <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+       </Routes>
+       <Footer/>
     </div>
   );
 };
