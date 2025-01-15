@@ -2,7 +2,7 @@ import React,{useRef} from "react";
 import emailjs from '@emailjs/browser';
 import { MdOutlineEmail } from "react-icons/md";
 import { IoPinOutline, IoPhonePortraitOutline } from "react-icons/io5";
-
+import {  toast } from 'react-toastify';
 const ContactForm = () => {
     const form = useRef();
 
@@ -15,7 +15,8 @@ const ContactForm = () => {
         })
         .then(
           () => {
-            console.log('SUCCESS!');
+          toast("Message sent")
+
           },
           (error) => {
             console.log('FAILED...', error.text);
@@ -23,6 +24,7 @@ const ContactForm = () => {
         );
     };
   return (
+    
     <div
      
      className="flex flex-col md:flex-row justify-center items-center bg-black min-h-screen mt-24 gap-y-16 md:gap-x-24">
@@ -41,6 +43,7 @@ const ContactForm = () => {
               type="text"
               id="firstName"
               name="first-name"
+              required
               className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
               placeholder="Enter your first name"
             />
@@ -72,6 +75,7 @@ const ContactForm = () => {
           </label>
           <input
             type="email"
+            required
             id="email"
             name="user-email"
             className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"

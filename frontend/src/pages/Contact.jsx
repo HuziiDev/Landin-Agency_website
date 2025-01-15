@@ -6,6 +6,7 @@ import ContactForm from '../components/ContactForm';
 const Contact = () => {
   return (
      <>
+  
         <ContactHero/>
         <ContactForm/>
      </>

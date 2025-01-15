@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import About from './components/About';
+import { ToastContainer} from 'react-toastify';
 const App = () => {
   const cursorRef = useRef(null); // Ref for the custom cursor
 
@@ -39,6 +40,7 @@ const App = () => {
       ></div>
 
       {/* Main Content */}
+         <ToastContainer />
       <Navbar/>
        <Routes>
         <Route path='/' element={<Home/>}/>
