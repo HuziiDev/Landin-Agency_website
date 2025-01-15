@@ -1,6 +1,31 @@
-import React from 'react'
+import React,{useRef, useEffect} from 'react'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const PortfilioCard = ({img,title,tech1,tech2,tech3,tech4, tech5,tech6}) => {
+gsap.registerPlugin(ScrollTrigger);
+
+const PortfilioCard = ({img,title,tech1,tech2,tech3,tech4, tech5,tech6,isFirst}) => {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    if (isFirst && cardRef.current) {
+      // Apply GSAP ScrollTrigger only to the first card
+      gsap.to(cardRef.current, {
+        scale: 0.7,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: cardRef.current,
+          start: 'top 15%',
+          end: 'bottom 15%',
+          markers: true, // Use markers for debugging
+          scrub: 1, // Smooth scrub animation
+          pin: true, // Pin the card while the animation is active
+          onEnter: () => console.log("Entering animation"), // Debugging trigger
+          onLeave: () => console.log("Leaving animation"), // Debugging trigger
+        },
+      });
+    }
+  }, [isFirst]);
   return (
       <div   ref={cardRef}  className=" sticky top-[15vh] cursor-pointer card  shadow-md shadow-blue-600 w-[90%] h-80 md:h-[90%] flex flex-col justify-center items-center bg-zinc-900 mb-10 rounded-lg ">
     <img
