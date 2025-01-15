@@ -25,7 +25,7 @@ const PortfilioCard = ({img,title,tech1,tech2,tech3,tech4, tech5,tech6,isFirst})
     }
   }, [isFirst]);
   return (
-      <div   ref={cardRef}  className=" sticky top-[15vh] cursor-pointer card  shadow-md shadow-blue-600 w-[90%] h-80 md:h-[90%] flex flex-col justify-center items-center bg-zinc-900 mb-10 rounded-lg ">
+      <div   ref={cardRef}  className=" sticky top-[15vh] cursor-pointer card  shadow-md shadow-blue-600 w-[90%] h-auto md:h-[90%] flex flex-col justify-center items-center bg-zinc-900 mb-10 rounded-lg ">
     <img
       className="w-[95%] md:w-[98%] md:pb-2 md:pt-2  h-[95%] rounded-lg"
       src={img}
