@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import About from '../components/About'
+import About from '../components/AboutUs'
 import Results from '../components/Results'
 import Features from '../components/Features'
 import Portfolio from '../components/Portfolio'
@@ -11,6 +11,7 @@ import JoinUs from '../components/JoinUs'
 import Marquee from '../components/Marquee'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
+import AboutUs from '../components/AboutUs'
 
 
 const Home = () => {
@@ -21,7 +22,7 @@ const Home = () => {
         <Hero/>
         <Marquee/>
         <String/>
-        <About/>
+        <AboutUs/>
         <Results/>
         <Features/>
         <Portfolio/>

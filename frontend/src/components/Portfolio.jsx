@@ -22,8 +22,9 @@ const Portfolio = () => {
     </button>
     </div>
 
-    <div className="card_container   w-[90%] mx-auto flex flex-col justify-center items-center">
+    <div className="card_container gap-5 py-[15vh]   w-[90%] mx-auto flex flex-col  justify-center items-center">
       <PortfilioCard
+        
         img={fanfit}
         title="Audi"
         tech1="React"
@@ -32,6 +33,7 @@ const Portfolio = () => {
         tech4="MongoDB"
         tech5="Tailwind"
         tech6="Framer-motion"
+        isFirst={true}
       />
       <PortfilioCard
         img="https://imteg.weebly.com/uploads/5/4/9/8/54982803/2421183_orig.jpg"
@@ -42,6 +44,7 @@ const Portfolio = () => {
         tech4="MongoDB"
         tech5="Tailwind"
         tech6="Framer-motion"
+        isFirst={true}
       />
       <PortfilioCard
         img="https://imteg.weebly.com/uploads/5/4/9/8/54982803/2421183_orig.jpg"
@@ -52,6 +55,7 @@ const Portfolio = () => {
         tech4="MongoDB"
         tech5="Tailwind"
         tech6="Framer-motion"
+        isFirst={true}
       />
       <PortfilioCard
         img="https://imteg.weebly.com/uploads/5/4/9/8/54982803/2421183_orig.jpg"
@@ -62,6 +66,7 @@ const Portfolio = () => {
         tech4="MongoDB"
         tech5="Tailwind"
         tech6="Framer-motion"
+        isFirst={true}
       />
 </div>
 
