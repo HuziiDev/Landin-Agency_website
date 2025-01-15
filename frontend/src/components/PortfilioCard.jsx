@@ -17,11 +17,9 @@ const PortfilioCard = ({img,title,tech1,tech2,tech3,tech4, tech5,tech6,isFirst})
           trigger: cardRef.current,
           start: 'top 15%',
           end: 'bottom 15%',
-          markers: true, // Use markers for debugging
-          scrub: 1, // Smooth scrub animation
-          pin: true, // Pin the card while the animation is active
-          onEnter: () => console.log("Entering animation"), // Debugging trigger
-          onLeave: () => console.log("Leaving animation"), // Debugging trigger
+         // Use markers for debugging
+          scrub: true, // Smooth scrub animation
+          
         },
       });
     }
