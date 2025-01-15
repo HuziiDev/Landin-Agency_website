@@ -5,8 +5,9 @@ import {Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
-import About from './components/About';
+
 import { ToastContainer} from 'react-toastify';
+import About from './pages/About';
 const App = () => {
   const cursorRef = useRef(null); // Ref for the custom cursor
 

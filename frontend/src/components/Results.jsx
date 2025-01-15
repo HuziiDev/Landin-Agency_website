@@ -5,8 +5,10 @@ import {motion} from 'framer-motion'
 // import "swiper/css/navigation";
 // import "swiper/css/pagination";
 // import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Link} from "react-router-dom";
 
 const Results = () => {
+  
   return (
     <div className="bg-black w-full">
       {/* Header Section */}
@@ -24,9 +26,10 @@ const Results = () => {
         <p className="pt-4 px-5 text-neutral-400 text-base">
           Effortlessly connect with your favorite tool, whether it's your CRM or email marketing platform.
         </p>
-        <button className="text-white mt-6 bg-blue-700 px-4 py-3 mb-8 rounded-lg font-semibold shadow-md shadow-blue-700">
+     <Link to='/contact'>   <button  className="text-white mt-6 bg-blue-700 px-4 py-3 mb-8 rounded-lg font-semibold shadow-md shadow-blue-700">
           Book a 15-min Call
         </button>
+        </Link>
       </div>
 
       {/* Swiper Carousel */}

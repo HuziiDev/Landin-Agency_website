@@ -109,12 +109,12 @@ const Navbar = () => {
       }}
           className="absolute top-18 left-0 w-full h-96 bg-gradient-to-b from-zinc-900 via-blue-900 to-gray-900 flex flex-col  gap-2 p-4 transition-transform duration-300 ease-in-out"
         >
-           <Link onClick={handleDropdownClick} to='/contact' className="text-xl text-gray-300 w-full text-center py-2" href="">
+           <Link onClick={handleDropdownClick} to='/' className="text-xl text-gray-300 w-full text-center py-2" href="">
             Home
           </Link>
-          <a className="text-xl text-gray-300 w-full text-center py-2" href="">
+          <Link onClick={handleDropdownClick} to='/about' className="text-xl text-gray-300 w-full text-center py-2" >
             About
-          </a>
+          </Link>
           <a className="text-xl text-gray-300 w-full text-center py-2" href="">
             Portfolio
           </a>
