@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,22 +35,35 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex gap-8 items-center">
-           <Link to='/' className="text-xl text-gray-400"  >    
+           <NavLink to='/' className={({isActive})=>
+           isActive
+           ? 'text-xl text-white font-semibold'
+           : 'text-xl text-gray-400 '
+           } 
+           >    
               Home
-              </Link>
-           <Link to='/about' className="text-xl text-gray-400"> 
+              </NavLink>
+           <NavLink to='/about' className={({isActive})=>
+           isActive
+           ? 'text-xl text-white font-semibold'
+           : 'text-xl text-gray-400 '
+           }> 
               About
             
-            </Link>
-            <a className="text-xl text-gray-400" href="">
+            </NavLink>
+            <NavLink className="text-xl text-gray-400" href="">
               Portfolio
-            </a>
-        <Link className="text-xl text-gray-400" to='/contact'>    
+            </NavLink>
+        <NavLink className={({isActive})=>
+           isActive
+           ? 'text-xl text-white font-semibold'
+           : 'text-xl text-gray-400 '
+           } to='/contact'>    
               Contact
-            </Link>
-            <a className="text-xl text-gray-400" href="">
+            </NavLink>
+            <NavLink className="text-xl text-gray-400" href="">
               FAQ
-            </a>
+            </NavLink>
           </div>
         </div>
 
