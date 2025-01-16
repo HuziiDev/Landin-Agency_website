@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 const OurServices = () => {
   return (
     <div className='w-full bg-black'>
-        <div className='text-white flex flex-col justify-center items-center pt-12 '>
+        <div className='text-white flex flex-col justify-center items-center  '>
 
         <button className="flex items-center  justify-center gap-2 px-4 rounded-lg font-light text-lg shadow-md shadow-blue-700 py-2 bg-zinc-800/40">
             <div className=" w-2 h-2 bg-white rounded-full"></div>

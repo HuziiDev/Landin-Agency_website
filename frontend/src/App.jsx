@@ -5,10 +5,20 @@ import {Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
+import lenis from './lenis';
 
 import { ToastContainer} from 'react-toastify';
 import About from './pages/About';
 const App = () => {
+  useEffect(() => {
+    // Lenis is already initialized and animating in lenis.js
+    return () => {
+      lenis.destroy(); // Clean up Lenis when the component unmounts
+    };
+  }, []);
+
+
+
   const cursorRef = useRef(null); // Ref for the custom cursor
 
   useEffect(() => {
@@ -17,15 +27,15 @@ const App = () => {
       gsap.to(cursorRef.current, {
         x: e.clientX,
         y: e.clientY,
-        duration: 0.8, // Smoothness of the cursor movement
+        duration: 0.8, 
         ease: 'back.out',
       });
     };
 
-    // Add the event listener for mouse movement
+  
     document.addEventListener('mousemove', handleMouseMove);
 
-    // Cleanup the listener on component unmount
+    
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };

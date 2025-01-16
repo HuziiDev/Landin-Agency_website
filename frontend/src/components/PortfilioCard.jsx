@@ -32,7 +32,7 @@ const PortfilioCard = ({img,title,tech1,tech2,tech3,tech4, tech5,tech6,isFirst})
       alt=""
     />
 
-    <div className="card absolute h-[18%] md:h-[15%] lg:h-[12%] xl:h-[10%]  bottom-3  w-[90%] rounded-lg bg-zinc-900 overflow-hidden">
+    <div className="card absolute  bottom-5 pb-2 pt-2  w-[90%] rounded-lg bg-zinc-900 overflow-hidden">
       <div className="flex justify-between items-center w-[90%]   mt-3 mx-auto">
         <h1 className="text-white font-semibold text-lg">{title}</h1>
         <button className="cursor-default  md:hidden px-2 py-1 bg-zinc-800  border-2 border-gray-500 rounded-lg text-neutral-400">2024</button>
