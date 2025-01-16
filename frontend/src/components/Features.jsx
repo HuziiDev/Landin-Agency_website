@@ -1,6 +1,6 @@
 import React from 'react'
 import FeaturesCard from './FeaturesCard'
-
+import {motion} from 'framer-motion'
 const Features = () => {
   return (
     
@@ -11,11 +11,26 @@ const Features = () => {
     <div className=" w-2 h-2 bg-white rounded-full"></div>
     Features
   </button>
-    <h1 className='pt-8 text-[30px] md:text-[50px] text-white pl-6 md:pl-16'>Unlimited Design Features</h1>
-    <h1 className='text-[30px] md:text-[50px] text-neutral-400 px-5' >Delivered In A Seconds!</h1>
+    <motion.h1
+             initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "circInOut" }}
+            viewport={{ once: true }}
+             className='pt-8 text-[30px] md:text-[50px] text-white pl-6 md:pl-16'>Unlimited Design Features</motion.h1>
+    <motion.h1
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "circInOut" }}
+            viewport={{ once: true }}
+     className='text-[30px] md:text-[50px] text-neutral-400 px-5' >Delivered In A Seconds!</motion.h1>
 
-    <p className='pt-4 px-5 text-neutral-400 text-base pl-12'>Get unlimited design features that give you the freedom
-    to create without boundaries.</p>
+    <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 2, ease: "circInOut" }}
+            viewport={{ once: true }}
+    className='pt-4 px-5 text-neutral-400 text-base pl-12'>Get unlimited design features that give you the freedom
+    to create without boundaries.</motion.p>
 
     <button className="text-white mt-6 bg-blue-700 px-4 py-3 mb-8 rounded-lg font-semibold shadow-md shadow-blue-700">
     View About Landin

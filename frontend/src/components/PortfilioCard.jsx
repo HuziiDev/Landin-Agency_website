@@ -1,31 +1,31 @@
 import React,{useRef, useEffect} from 'react'
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import gsap from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const PortfilioCard = ({img,title,tech1,tech2,tech3,tech4, tech5,tech6,isFirst}) => {
-  const cardRef = useRef(null);
+  // const cardRef = useRef(null);
 
-  useEffect(() => {
-    if (isFirst && cardRef.current) {
-      // Apply GSAP ScrollTrigger only to the first card
-      gsap.to(cardRef.current, {
-        scale: 0.7,
-        opacity: 0,
-        scrollTrigger: {
-          trigger: cardRef.current,
-          start: 'top 15%',
-          end: 'bottom 15%',
-         // Use markers for debugging
-          scrub: true, // Smooth scrub animation
+  // useEffect(() => {
+  //   if (isFirst && cardRef.current) {
+  //     // Apply GSAP ScrollTrigger only to the first card
+  //     gsap.to(cardRef.current, {
+  //       scale: 0.7,
+  //       opacity: 0,
+  //       scrollTrigger: {
+  //         trigger: cardRef.current,
+  //         start: 'top 15%',
+  //         end: 'bottom 15%',
+  //        // Use markers for debugging
+  //         scrub: true, // Smooth scrub animation
           
-        },
-      });
-    }
-  }, [isFirst]);
+  //       },
+  //     });
+  //   }
+  // }, [isFirst]);
   return (
-      <div   ref={cardRef}  className=" sticky top-[15vh] cursor-pointer card  shadow-md shadow-blue-600 w-[90%] h-auto md:h-[90%] flex flex-col justify-center items-center bg-zinc-900 mb-10 rounded-lg ">
+      <div     className=" sticky top-[15vh] cursor-pointer card h-80  shadow-md shadow-blue-600 w-[90%]  md:h-[90%] flex flex-col justify-center items-center bg-zinc-900 mb-10 rounded-lg ">
     <img
       className="w-[95%] md:w-[98%] md:pb-2 md:pt-2  h-[95%] rounded-lg"
       src={img}

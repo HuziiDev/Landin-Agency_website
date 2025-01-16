@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {motion} from 'framer-motion'
 const AboutUs = () => {
   return (
     <div className="bg-black w-full md:min-h-screen px-4 sm:px-[5vw] md:px-[7vw]">
@@ -28,18 +28,33 @@ const AboutUs = () => {
           </button>
 
           {/* Headings */}
-          <h1 className="text-[30px] lg:text-[45px] mt-6 lg:mt-10 text-white">
+          <motion.h1
+          initial={{opacity:0}}
+           whileInView={{opacity:1}}
+           transition={{duration:1,ease:"circInOut" }}
+           viewport={{once:true}}
+           className="text-[30px] lg:text-[45px] mt-6 lg:mt-10 text-white">
             Building Stronger Brands
-          </h1>
-          <h1 className="text-[30px] lg:text-[45px] text-neutral-400">
+          </motion.h1>
+          <motion.h1
+          initial={{opacity:0}}
+           whileInView={{opacity:1}}
+           transition={{duration:1,ease:"circInOut" }}
+           viewport={{once:true}}
+           className="text-[30px] lg:text-[45px] text-neutral-400">
             Creating Impressions!
-          </h1>
+          </motion.h1>
 
           {/* Description */}
-          <p className="mt-4 text-neutral-400 text-base max-w-[90%] lg:max-w-[80%]">
+          <motion.p
+          initial={{opacity:0}}
+           whileInView={{opacity:1}}
+           transition={{duration:2,ease:"circInOut" }}
+           viewport={{once:true}}
+           className="mt-4 text-neutral-400 text-base max-w-[90%] lg:max-w-[80%]">
             Delivering high-quality, on-demand designs with precision. Elevate
             your brand effortlessly, one snap at a time.
-          </p>
+          </motion.p>
 
           {/* Stats */}
           <div className="flex items-center gap-4 mt-12">

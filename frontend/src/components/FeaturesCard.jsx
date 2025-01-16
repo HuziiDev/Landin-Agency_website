@@ -9,11 +9,7 @@ const FeaturesCard = ({img1,title1,title2,desc}) => {
         src={img1}
         alt=""
       />
-      <img
-        className="w-10 h-8 mr-2"
-        src="https://img.icons8.com/?size=100&id=52360&format=png&color=000000"
-        alt=""
-      />
+    
     </div>
 
     <div className="flex mt-10 gap-6 pl-2">

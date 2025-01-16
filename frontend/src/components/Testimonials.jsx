@@ -1,6 +1,6 @@
 import React from 'react'
 import TestimonialCard from './TestimonialCard'
-
+import {motion} from 'framer-motion'
 const Testimonials = () => {
   return (
     <div className='w-full bg-black'>
@@ -10,11 +10,26 @@ const Testimonials = () => {
             <div className=" w-2 h-2 bg-white rounded-full"></div>
             Testimonial
         </button>
-            <h1 className='pt-8 text-[30px] md:text-[50px] text-white pl-6 md:pl-16'>Customer Reviews About</h1>
-            <h1 className='text-[30px] md:text-[50px] text-neutral-400 px-5' >Work, Usability and Design.</h1>
+            <motion.h1
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "circInOut" }}
+                viewport={{ once: true }}
+             className='pt-8 text-[30px] md:text-[50px] text-white pl-6 md:pl-16'>Customer Reviews About</motion.h1>
+            <motion.h1
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "circInOut" }}
+                viewport={{ once: true }}
+             className='text-[30px] md:text-[50px] text-neutral-400 px-5' >Work, Usability and Design.</motion.h1>
 
-            <p className='pt-4 px-5 text-neutral-400 text-base pl-12'>Hear from our happy clients! See how we’ve helped them achieve
-            their goals and create lasting impact.</p>
+            <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 2, ease: "circInOut" }}
+                viewport={{ once: true }}
+             className='pt-4 px-5 text-neutral-400 text-base pl-12'>Hear from our happy clients! See how we’ve helped them achieve
+            their goals and create lasting impact.</motion.p>
 
                 <button className="text-white mt-6 bg-blue-700 px-4 py-3 mb-8 rounded-lg font-semibold shadow-md shadow-blue-700">
                 View About Landin
