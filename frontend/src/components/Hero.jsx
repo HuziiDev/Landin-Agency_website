@@ -81,29 +81,54 @@ const Hero = () => {
           </div>
         </motion.div>
           
-        <div className=" mt-28 md:mt-12 overflow-hidden w-full md:w-[60%] ">
+        <div className=" mt-28 md:mt-12 overflow-hidden w-full md:w-[30%] ">
         <motion.div
-    className="flex gap-8 "
-    initial={{ x: 0 }}
-    animate={{ x: ["0%", "-100%"] }}
-    transition={{
-      duration: 20, // Adjust the duration as needed
-      repeat: Infinity, // Infinite repeat
-      ease: "linear",
-    }}
-  >
+    className="flex gap-8 ">
     {/* First set of logos */}
-    <img
+    <motion.img
+      initial={{x:0}}
+            animate={{x:'-100%'}}
+            transition={{ease:'linear', repeat: Infinity, duration: 5}}
       src="https://framerusercontent.com/images/5Hr06xe33iekloyBybSHJa4e8.svg"
       alt="Company Logo 1"
       className="h-10 object-contain"
     />
-    <img
+    <motion.img
+      initial={{x:0}}
+            animate={{x:'-100%'}}
+            transition={{ease:'linear', repeat: Infinity, duration: 5}}
       src="https://framerusercontent.com/images/5Hr06xe33iekloyBybSHJa4e8.svg"
       alt="Company Logo 2"
       className="h-10 object-contain"
     />
-    <img
+    <motion.img
+      initial={{x:0}}
+            animate={{x:'-100%'}}
+            transition={{ease:'linear', repeat: Infinity, duration: 5}}
+      src="https://framerusercontent.com/images/5Hr06xe33iekloyBybSHJa4e8.svg"
+      alt="Company Logo 3"
+      className="h-10 object-contain"
+    />
+    <motion.img
+      initial={{x:0}}
+            animate={{x:'-100%'}}
+            transition={{ease:'linear', repeat: Infinity, duration: 5}}
+      src="https://framerusercontent.com/images/5Hr06xe33iekloyBybSHJa4e8.svg"
+      alt="Company Logo 3"
+      className="h-10 object-contain"
+    />
+    <motion.img
+      initial={{x:0}}
+            animate={{x:'-100%'}}
+            transition={{ease:'linear', repeat: Infinity, duration: 5}}
+      src="https://framerusercontent.com/images/5Hr06xe33iekloyBybSHJa4e8.svg"
+      alt="Company Logo 3"
+      className="h-10 object-contain"
+    />
+    <motion.img
+      initial={{x:0}}
+            animate={{x:'-100%'}}
+            transition={{ease:'linear', repeat: Infinity, duration: 5}}
       src="https://framerusercontent.com/images/5Hr06xe33iekloyBybSHJa4e8.svg"
       alt="Company Logo 3"
       className="h-10 object-contain"

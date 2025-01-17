@@ -89,7 +89,13 @@ const cardData = [
 
 const Card = ({ imgUrl, title, para, spanText1, spanText2 }) => {
   return (
-    <div className="card bg-zinc-800 w-[300px] md:w-[400px] rounded-lg relative overflow-hidden">
+    <motion.div
+          initial={{x:0}}
+          animate={{x:'-100%'}}
+          transition={{ease:'linear', repeat: Infinity, duration: 20}}
+          className="card bg-zinc-800 w-[300px] md:w-[400px] rounded-lg relative overflow-hidden"
+     
+     >
     <img
       className="h-[200px] rounded-lg object-cover w-full"
       src={imgUrl}
@@ -109,7 +115,7 @@ const Card = ({ imgUrl, title, para, spanText1, spanText2 }) => {
         </span>
       </div>
     </div>
-  </div>
+  </motion.div>
   );
 };
 
@@ -162,13 +168,7 @@ const Results = () => {
       <div className="card-container flex flex-nowrap gap-6 p-6 overflow-hidden relative">
         <motion.div
           className="flex gap-6"
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
-          transition={{
-            ease: "linear",
-            repeat: Infinity,
-            duration: 50,
-          }}
+        
         >
           {cardData.map((card) => (
             <Card
