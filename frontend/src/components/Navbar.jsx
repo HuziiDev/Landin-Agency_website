@@ -51,7 +51,8 @@ const Navbar = () => {
               About
             
             </NavLink>
-            <NavLink className="text-xl text-gray-400" href="">
+            <NavLink to='/portfolio' className="text-xl text-gray-400"
+             >
               Portfolio
             </NavLink>
         <NavLink className={({isActive})=>
@@ -68,7 +69,7 @@ const Navbar = () => {
         </div>
 
         {/* Button */}
-        <div className="flex items-center ">
+        <div className="flex md:ml-24 items-center ">
           <button className="text-white bg-blue-700 px-6 py-4 rounded-lg hidden   md:block font-semibold">
             Get in Touch
           </button>

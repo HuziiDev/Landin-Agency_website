@@ -1,6 +1,9 @@
 import React from 'react';
 import {motion} from 'framer-motion'
+import { useNavigate } from 'react-router-dom';
 const AboutUs = () => {
+
+  const navigate = useNavigate()
   return (
     <div className="bg-black w-full md:min-h-screen px-4 sm:px-[5vw] md:px-[7vw]">
       <div className="flex flex-col lg:flex-row lg:gap-10 justify-around items-center p-4 lg:p-0">
@@ -76,7 +79,9 @@ const AboutUs = () => {
 
           {/* Buttons Section */}
           <div className="flex flex-col lg:flex-row mt-10 items-center lg:gap-10 gap-6">
-            <button className="bg-blue-700 px-5 rounded-lg py-3 w-full lg:w-auto shadow-md shadow-blue-700">
+            <button
+            onClick={()=> navigate('/about')}
+             className="bg-blue-700 px-5 rounded-lg py-3 w-full lg:w-auto shadow-md shadow-blue-700">
               View about Landin
             </button>
 

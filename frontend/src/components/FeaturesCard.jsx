@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FeaturesCard = ({img1,title1,title2,desc}) => {
+const FeaturesCard = ({img1,title1,title2,desc, isPro}) => {
   return (
     <div className="card text-white max-w-[90%] md:max-w-[30%] lg:max-w-[30%] flex flex-col justify-center bg-custom-blue-gradient shadow-md shadow-blue-700 rounded-xl mb-6 mt-6">
     <div className="images flex justify-between pl-2 pt-4">
@@ -15,9 +15,11 @@ const FeaturesCard = ({img1,title1,title2,desc}) => {
     <div className="flex mt-10 gap-6 pl-2">
       <h2 className="font-semibold">{title1}</h2>
 
+     {isPro &&
       <button className="bg-blue-700 px-3 font-semibold shadow-md shadow-blue-600 py-1 rounded-lg text-sm">
         Pro
       </button>
+     } 
     </div>
     <h2 className="text-neutral-400 font-semibold pl-2">{title2}</h2>
 

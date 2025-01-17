@@ -6,16 +6,21 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import lenis from './lenis';
-
 import { ToastContainer} from 'react-toastify';
 import About from './pages/About';
+import Portfolio from './components/Portfolio';
+
+
+
 const App = () => {
-  useEffect(() => {
-    // Lenis is already initialized and animating in lenis.js
-    return () => {
-      lenis.destroy(); // Clean up Lenis when the component unmounts
-    };
-  }, []);
+
+
+  // useEffect(() => {
+  //   // Lenis is already initialized and animating in lenis.js
+  //   return () => {
+  //     lenis.destroy(); // Clean up Lenis when the component unmounts
+  //   };
+  // }, []);
 
 
 
@@ -27,7 +32,7 @@ const App = () => {
       gsap.to(cursorRef.current, {
         x: e.clientX,
         y: e.clientY,
-        duration: 0.8, 
+        duration: 0.8, // Smoothness of the cursor movement
         ease: 'back.out',
       });
     };
@@ -57,6 +62,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/portfolio' element={<Portfolio/>}/>
        </Routes>
        <Footer/>
     </div>

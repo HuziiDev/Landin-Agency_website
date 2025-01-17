@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { useNavigate } from 'react-router-dom';
+
 
 const Hero = () => {
+  const navigate = useNavigate()
   return (
     <motion.div
       initial={{ backgroundPosition: "0% 50%" }}
@@ -60,6 +63,7 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
             <motion.button
+            onClick={()=> navigate('/contact')}
               initial={{opacity:0}}
             animate={{opacity:1}}
              transition={{duration:2,ease:"anticipate" }}
@@ -67,6 +71,7 @@ const Hero = () => {
               Connect with us
             </motion.button>
             <motion.button
+            onClick={()=> navigate('/about')}
              initial={{opacity:0}}
             animate={{opacity:1}}
              transition={{duration:2,ease:"anticipate" }}
