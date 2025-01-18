@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink , useNavigate} from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate()
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -104,7 +105,7 @@ const Navbar = () => {
 
         {/* Button */}
         <div className="flex md:ml-24 items-center ">
-          <button className="text-white bg-blue-700 px-6 py-4 rounded-lg hidden md:block font-semibold">
+          <button onClick={()=> navigate('/contact')} className="text-white bg-blue-700 px-6 py-4 rounded-lg hidden md:block font-semibold">
             Get in Touch
           </button>
 
