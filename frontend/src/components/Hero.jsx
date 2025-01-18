@@ -20,7 +20,7 @@ const Hero = () => {
       }}
       className="h-[750px]  md:max-h-[100vh] bg-black"
     >
-      <motion.div className="flex flex-col text-white px-6 sm:px-12 md:px-24 lg:px-36 xl:px-48">
+      <motion.div className="flex flex-col pt-24 text-white px-6 sm:px-12 md:px-24 lg:px-36 xl:px-48">
         {/* New Tag */}
         <motion.div 
         initial={{opacity:0}}
