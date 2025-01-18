@@ -17,7 +17,7 @@ const ContactHero = () => {
       }}
       className="h-[60vh] md:h-[90vh] bg-black  pt-2  "
     >
-      <motion.div className="flex flex-col text-white items-center">
+      <motion.div className="flex flex-col pt-24 text-white items-center">
         {/* New Tag */}
         <motion.div 
                 initial={{opacity:0}}
