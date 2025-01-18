@@ -15,9 +15,9 @@ const AboutHero = () => {
       backgroundImage: 'linear-gradient(20deg, #000000, #051225)',
       backgroundSize: '200% 200%',
     }}
-    className="h-[60vh] md:h-[90vh] bg-black  pt-2  "
+    className="h-[70vh] md:h-[90vh] bg-black  pt-2  "
   >
-    <motion.div className="flex pt-24 flex-col text-white items-center">
+    <motion.div className="flex md:pt-24 pt-8 flex-col text-white items-center">
       {/* New Tag */}
       <motion.div 
               initial={{opacity:0}}
