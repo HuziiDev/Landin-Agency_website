@@ -1,7 +1,15 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
+
 const ContactHero = () => {
+
+  const scrollTo = () => {
+    window.scrollTo({
+      top:740,
+      behavior:'smooth'
+    }) // Scrolling to 100px from the top of the page.
+  };
   return (
     <motion.div
       initial={{ backgroundPosition: '0% 50%' }}
@@ -63,9 +71,10 @@ const ContactHero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center mt-2">
-          <button className="text-white mt-6 bg-blue-700 px-8 text-lg py-3 mb-8 rounded-lg font-medium shadow-md shadow-blue-700">
+          <a onClick={scrollTo} ><button  className="text-white mt-6 bg-blue-700 px-8 text-lg py-3 mb-8 rounded-lg font-medium shadow-md shadow-blue-700">
           Fill out form
         </button>
+        </a>
            
           </div>
         </motion.div>
