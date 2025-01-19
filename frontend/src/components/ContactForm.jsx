@@ -29,7 +29,7 @@ const ContactForm = () => {
      
      className="flex flex-col md:flex-row justify-center items-center bg-black min-h-screen mt-24 gap-y-16 md:gap-x-24">
       {/* Form Section */}
-      <form ref={form} onSubmit={sendEmail} className="w-[90%] md:w-[70%] max-w-[800px] bg-neutral-900 shadow-lg rounded-xl p-8">
+      <form ref={form} onSubmit={sendEmail} className="w-[90%] md:w-[70%] max-w-[800px] bg-neutral-950 border-[0.2px] border-white/20 shadow-lg rounded-xl p-8">
         {/* First Name and Last Name */}
         <div className="flex flex-wrap gap-4 mb-6">
           <div className="w-full md:w-[45%]">
@@ -44,7 +44,7 @@ const ContactForm = () => {
               id="firstName"
               name="first-name"
               required
-              className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
+              className="w-full p-3 bg-neutral-800 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
               placeholder="Enter your first name"
             />
           </div>
@@ -59,7 +59,7 @@ const ContactForm = () => {
             name="last-name"
               type="text"
               id="lastName"
-              className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
+              className="w-full p-3 bg-neutral-800 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
               placeholder="Enter your last name"
             />
           </div>
@@ -78,7 +78,7 @@ const ContactForm = () => {
             required
             id="email"
             name="user-email"
-            className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
+            className="w-full p-3 bg-neutral-800 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
             placeholder="Enter your email"
           />
         </div>
@@ -95,7 +95,7 @@ const ContactForm = () => {
             <input
               type="text"
               id="location"
-              className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
+              className="w-full p-3 bg-neutral-800 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
               placeholder="Enter your location"
             />
           </div>
@@ -108,7 +108,7 @@ const ContactForm = () => {
             </label>
             <select
               id="companyType"
-              className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
+              className="w-full p-3 bg-neutral-800 outline-none rounded-lg focus:ring-2 focus:ring-blue-600"
             >
               <option value="" disabled>
                 Select company type
@@ -134,7 +134,7 @@ const ContactForm = () => {
           name="message"
             id="message"
             rows="5"
-            className="w-full p-3 bg-neutral-700 outline-none rounded-lg focus:ring-2 focus:ring-blue-400"
+            className="w-full p-3 bg-neutral-800 outline-none rounded-lg focus:ring-2 focus:ring-blue-400"
             placeholder="Write your message here..."
           ></textarea>
         </div>
@@ -153,7 +153,7 @@ const ContactForm = () => {
       {/* Contact Information Section */}
       <div className="w-[90%] md:w-[25%] flex flex-col gap-8">
         {/* Email */}
-        <div className="text-white bg-neutral-900 rounded-xl p-6">
+        <div className="text-white bg-neutral-950 border-[0.2px] border-white/20 rounded-xl p-6">
           <div className="flex items-center gap-4">
             <MdOutlineEmail size={28} />
             <p className="font-semibold">Email</p>
@@ -164,7 +164,7 @@ const ContactForm = () => {
         </div>
 
         {/* Phone */}
-        <div className="text-white bg-neutral-900 rounded-xl p-6">
+        <div className="text-white bg-neutral-950 border-[0.2px] border-white/20 rounded-xl p-6">
           <div className="flex items-center gap-4">
             <IoPhonePortraitOutline size={28} />
             <p className="font-semibold">Phone</p>
@@ -174,7 +174,7 @@ const ContactForm = () => {
         </div>
 
         {/* Address */}
-        <div className="text-white bg-neutral-900 rounded-xl p-6">
+        <div className="text-white bg-neutral-950 border-[0.2px] border-white/20 rounded-xl p-6">
           <div className="flex items-center gap-4">
             <IoPinOutline size={28} />
             <p className="font-semibold">Address</p>
