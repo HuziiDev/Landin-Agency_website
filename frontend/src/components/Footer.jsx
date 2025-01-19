@@ -1,7 +1,28 @@
-import React from "react";
+import React,{useRef} from "react";
+import emailjs from '@emailjs/browser';
 import {motion} from 'framer-motion'
-
+import { toast } from "react-toastify"; 
 const Footer = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_pozns9q', 'template_csibt4g', form.current, {
+        publicKey: '_yHvvyCmEDpptH9Fx',
+      })
+      .then(
+        () => {
+        toast("Message sent")
+
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <motion.footer
     initial={{ backgroundPosition: "0% 50%" }}
@@ -30,16 +51,17 @@ const Footer = () => {
           <p className="text-gray-400 mb-4">
             Created with 💙 by Static Studio.
           </p>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-2">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-2">
             <input
               type="text"
               placeholder="Enter your email..."
+                name="user-email"
               className="w-full sm:w-auto px-4 py-2 rounded-md bg-gray-800 text-gray-300 focus:outline-none"
             />
             <button className="bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700 w-full sm:w-auto">
               Subscribe
             </button>
-          </div>
+          </form>
         </div>
 
         {/* Quick Links */}
