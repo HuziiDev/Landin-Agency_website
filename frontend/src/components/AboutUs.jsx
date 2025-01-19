@@ -1,16 +1,19 @@
 import React from 'react';
-import {motion} from 'framer-motion'
+import {motion, useTime, useTransform} from 'framer-motion'
 import { useNavigate } from 'react-router-dom';
+
 const AboutUs = () => {
+
 
   const navigate = useNavigate()
   return (
     <div className="bg-black w-full md:min-h-screen px-4 sm:px-[5vw] md:px-[7vw]">
       <div className="flex flex-col lg:flex-row lg:gap-10 justify-around items-center pt-44 p-4 lg:p-0">
         {/* Image Section */}
-        <div className="bg-neutral-900  border-[1px] border-white/20 overflow-hidden w-full lg:w-[35%] flex items-center justify-center mt-6 lg:mt-24 rounded-xl shadow-md md:ml-[30px] min-w-[250px]    shadow-blue-700">
+        <div className="bg-neutral-900  border-[1px] border-white/20 overflow-hidden w-full lg:w-[35%] flex items-center justify-center mt-6 lg:mt-24 rounded-xl  md:ml-[30px] min-w-[250px]">
+        <div className='relative'>
           <img
-            className="rounded-xl border-[1px]  border-white/20 w-full h-full object-cover"
+            className="rounded-xl border-[1px]  border-white/20 w-full h-full object-cover z-10 relative"
             style={{
               minWidth: '350px', // Minimum width to prevent shrinking
               minHeight: '500px', // Minimum height to prevent shrinking
@@ -20,6 +23,8 @@ const AboutUs = () => {
             src="https://images.stockcake.com/public/8/2/5/82559b2e-0d40-473e-bc0b-4304b964b751_large/office-working-hours-stockcake.jpg"
             alt="About Image"
           />
+        
+        </div>
         </div>
 
         {/* Text Content Section */}

@@ -10,7 +10,7 @@ const Portfolio = () => {
 
       <button className="flex items-center  justify-center gap-2 px-4 rounded-lg font-light text-lg shadow-md shadow-blue-700 py-2 bg-zinc-800/40">
           <div className=" w-2 h-2 bg-white rounded-full"></div>
-          Features
+          Portfolio
       </button>
         <motion.h1
             initial={{ opacity: 0 }}

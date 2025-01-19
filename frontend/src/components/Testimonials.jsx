@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{MouseEventHandler} from 'react'
 import TestimonialCard from './TestimonialCard'
 import {motion} from 'framer-motion'
 const Testimonials = () => {
+      
+    
   return (
     <div className='w-full bg-black'>
             <div className='text-white flex flex-col justify-center items-center pt-20 '>
@@ -35,7 +37,11 @@ const Testimonials = () => {
                 View About Landin
             </button>
         </div>
-        <div className="w-[90%] mx-auto flex flex-wrap justify-center items-center mt-12  md:gap-6">
+
+        <div
+        style={{perspective:2000}}
+
+         className="w-[90%] mx-auto flex flex-wrap justify-center items-center mt-12  md:gap-6">
             <TestimonialCard
             img1="https://framerusercontent.com/images/OYzxFsmc3ulgxa94ZWms9Q9fBUY.png"
             img2="https://img.icons8.com/?size=100&id=sz8cPVwzLrMP&format=png&color=000000"
