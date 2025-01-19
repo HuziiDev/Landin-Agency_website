@@ -1,37 +1,20 @@
 import React from 'react'
 import ServicesCard from './ServicesCard'
 import {motion} from 'framer-motion'
+import Starter from './Starter'
 const OurServices = () => {
   return (
     <div className='w-full bg-black'>
-        <div className='text-white flex flex-col justify-center items-center  '>
 
-        <button className="flex items-center  justify-center gap-2 px-4 rounded-lg font-light text-lg shadow-md shadow-blue-700 py-2 bg-zinc-800/40">
-            <div className=" w-2 h-2 bg-white rounded-full"></div>
-            Our Services
-        </button>
-            <motion.h1
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "circInOut" }}
-                viewport={{ once: true }}
-             className='pt-8 text-[30px] md:text-[50px] text-white pl-6 md:pl-16'>Get High-Quality</motion.h1>
-            <motion.h1
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "circInOut" }}
-                viewport={{ once: true }}
-             className='text-[30px] md:text-[50px] text-neutral-400 px-5' >Clear Services Remotely.</motion.h1>
-
-            <motion.p
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 2, ease: "circInOut" }}
-                  viewport={{ once: true }}
-             className='pt-4 px-5 text-neutral-400 text-base pl-12'>Effortlessly connect with your favorite tools. Whether it's your CRM, email marketing platform.</motion.p>
-
-            
-        </div>
+        <Starter
+            btn1="Our Services"
+            title1="Get High-Quality"
+            title2="Clear Services Remotely."
+            desc="Effortlessly connect with your favorite tools. Whether it's your CRM, email marketing platform."
+            btn2="View About Landin"
+            isBtn={false}
+         />
+       
 
 
         <div className="w-[90%] mx-auto flex flex-wrap justify-center items-center mt-12  md:gap-6">
