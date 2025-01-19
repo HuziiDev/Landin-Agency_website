@@ -12,6 +12,7 @@ import Portfolio from './components/Portfolio';
 
 
 
+
 const App = () => {
 
 
@@ -56,14 +57,19 @@ const App = () => {
       ></div>
 
       {/* Main Content */}
+     
          <ToastContainer />
+         
+         
       <Navbar/>
+      
        <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/portfolio' element={<Portfolio/>}/>
        </Routes>
+      
        <Footer/>
     </div>
   );

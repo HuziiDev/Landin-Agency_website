@@ -26,7 +26,7 @@ const Hero = () => {
         initial={{opacity:0}}
             animate={{opacity:1}}
              transition={{duration:1,ease:"anticipate" }}
-        className="flex w-64 sm:w-64 bg-neutral-500/20 border border-gray-400 mt-16  rounded p-2 gap-4 sm:gap-8">
+           className="flex w-64 sm:w-64 bg-neutral-500/20 border border-gray-400 mt-16  rounded p-2 gap-4 sm:gap-8">
           <motion.button 
           
            className=" text-sm sm:text-base bg-blue-700 px-3 sm:px-4">New</motion.button>

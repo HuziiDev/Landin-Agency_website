@@ -97,9 +97,9 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
-            <NavLink className="text-xl text-gray-400" href="">
-              FAQ
-            </NavLink>
+
+
+            <a className="text-xl text-gray-400" href="#faq">FAQ</a>
           </div>
         </div>
 

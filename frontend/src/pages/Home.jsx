@@ -12,11 +12,12 @@ import Marquee from '../components/Marquee'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
 import AboutUs from '../components/AboutUs'
+import Faq from '../components/Faq'
 
 
 const Home = () => {
   return (
-    <>
+  <div>
        
         
         <Hero/>
@@ -29,10 +30,11 @@ const Home = () => {
         <OurServices/>
         <JoinUs/>
         <Testimonials/>
+        <Faq/>
 
       
      
-    </>
+        </div>
   )
 }
 
