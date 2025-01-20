@@ -14,77 +14,34 @@ const cardData = [
     spanText2: "35% Growth",
   },
   {
-    id: 1,
-    title: "Watch Ltd",
+    id: 2,
+    title: "FanFit Jerseys",
     imageUrl:
-      "https://i.pinimg.com/originals/a5/af/29/a5af297cc589e13706929afb0015aabd.jpg",
-    para: "Streamlined operations, reducing costs by with our automation solutions.",
-    spanText1: "60% Increased Traffic",
-    spanText2: "35% Growth",
+      "https://i.pinimg.com/736x/59/d3/dd/59d3ddd1fef88d4b74bbbd0c0a94bc14.jpg",
+    para: "Increased customer engagement improving overall growth.",
+    spanText1: "60% Enhanced Visibility",
+    spanText2: "65% Growth",
   },
   {
-    id: 1,
-    title: "Watch Ltd",
+    id: 3,
+    title: "Elite Cothing",
     imageUrl:
-      "https://i.pinimg.com/originals/a5/af/29/a5af297cc589e13706929afb0015aabd.jpg",
-    para: "Streamlined operations, reducing costs by with our automation solutions.",
+      "https://media.istockphoto.com/id/1222812626/photo/a-stack-of-neatly-folded-dark-clothes-isolated-on-a-black-gray-background-close-up.jpg?s=612x612&w=0&k=20&c=iZJLJR4IHT8Tr9I4D-dwfgXDXOyVsb34fbM7sTe0cVA=",
+    para: "Boosted customer engagement with a digital presence and targeted campaigns.",
     spanText1: "60% Increased Traffic",
-    spanText2: "35% Growth",
+    spanText2: "35% enhanced Visibility",
   },
   {
-    id: 1,
-    title: "Watch Ltd",
+    id: 4,
+    title: "KYMP Ditigal Agency",
     imageUrl:
-      "https://i.pinimg.com/originals/a5/af/29/a5af297cc589e13706929afb0015aabd.jpg",
-    para: "Streamlined operations, reducing costs by with our automation solutions.",
-    spanText1: "60% Increased Traffic",
-    spanText2: "35% Growth",
+      "https://www.shutterstock.com/image-vector/vector-illustration-radial-circle-silver-600nw-2223827219.jpg",
+    para: "Expanded market reach, tapping into new demographics with a driven approach",
+    spanText1: "20% Market Share",
+    spanText2: "35% enhanced Visibility",
   },
-  {
-    id: 1,
-    title: "Watch Ltd",
-    imageUrl:
-      "https://i.pinimg.com/originals/a5/af/29/a5af297cc589e13706929afb0015aabd.jpg",
-    para: "Streamlined operations, reducing costs by with our automation solutions.",
-    spanText1: "60% Increased Traffic",
-    spanText2: "35% Growth",
-  },
-  {
-    id: 1,
-    title: "Watch Ltd",
-    imageUrl:
-      "https://i.pinimg.com/originals/a5/af/29/a5af297cc589e13706929afb0015aabd.jpg",
-    para: "Streamlined operations, reducing costs by with our automation solutions.",
-    spanText1: "60% Increased Traffic",
-    spanText2: "35% Growth",
-  },
-  {
-    id: 1,
-    title: "Watch Ltd",
-    imageUrl:
-      "https://i.pinimg.com/originals/a5/af/29/a5af297cc589e13706929afb0015aabd.jpg",
-    para: "Streamlined operations, reducing costs by with our automation solutions.",
-    spanText1: "60% Increased Traffic",
-    spanText2: "35% Growth",
-  },
-  {
-    id: 1,
-    title: "Watch Ltd",
-    imageUrl:
-      "https://i.pinimg.com/originals/a5/af/29/a5af297cc589e13706929afb0015aabd.jpg",
-    para: "Streamlined operations, reducing costs by with our automation solutions.",
-    spanText1: "60% Increased Traffic",
-    spanText2: "35% Growth",
-  },
-  {
-    id: 1,
-    title: "Watch Ltd",
-    imageUrl:
-      "https://i.pinimg.com/originals/a5/af/29/a5af297cc589e13706929afb0015aabd.jpg",
-    para: "Streamlined operations, reducing costs by with our automation solutions.",
-    spanText1: "60% Increased Traffic",
-    spanText2: "35% Growth",
-  },
+  
+ 
  
 ];
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import PortfilioCard from './PortfilioCard'
 import fanfit from '../assets/fanfit.png'
+import imagify from '../assets/imagify_img.png'
 import {motion} from 'framer-motion'
 import Starter from './Starter'
 const Portfolio = () => {
@@ -31,6 +32,19 @@ const Portfolio = () => {
               tech4="MongoDB"
               tech5="Tailwind"
               tech6="Framer-motion"
+              url="https://futball-frontend.vercel.app"
+            
+            />
+            <PortfilioCard
+              img={imagify}
+              title="Imagify"
+              tech1="React"
+              tech2="Node"
+              tech3="Express"
+              tech4="MongoDB"
+              tech5="AI Integration"
+              tech6="Framer-motion"
+              url=""
             
             />
             <PortfilioCard
@@ -42,6 +56,7 @@ const Portfolio = () => {
               tech4="MongoDB"
               tech5="Tailwind"
               tech6="Framer-motion"
+              url=""
             
             />
             <PortfilioCard
@@ -53,17 +68,7 @@ const Portfolio = () => {
               tech4="MongoDB"
               tech5="Tailwind"
               tech6="Framer-motion"
-            
-            />
-            <PortfilioCard
-              img="https://imteg.weebly.com/uploads/5/4/9/8/54982803/2421183_orig.jpg"
-              title="Audi"
-              tech1="React"
-              tech2="Node"
-              tech3="Express"
-              tech4="MongoDB"
-              tech5="Tailwind"
-              tech6="Framer-motion"
+              url=""
             
             />
       </div>
