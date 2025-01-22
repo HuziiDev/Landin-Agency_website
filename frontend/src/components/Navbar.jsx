@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link, NavLink , useNavigate} from "react-router-dom";
 
+
 const Navbar = () => {
   const navigate = useNavigate()
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +11,13 @@ const Navbar = () => {
 
   const handleDropdownClick = () => {
     setIsMenuOpen(false);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+       // Smooth scrolling
+    });
   };
 
   // Handle scroll to show/hide navbar
@@ -64,39 +72,25 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex gap-8 items-center">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-xl text-white font-semibold"
-                  : "text-xl text-gray-400"
-              }
-            >
+            <a onClick={scrollToTop} className='text-xl text-gray-400 cursor-pointer font-semibold'>
               Home
-            </NavLink>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-xl text-white font-semibold"
-                  : "text-xl text-gray-400"
-              }
+            </a>
+            <a
+              href="#about"
+              className='text-xl text-gray-400'
             >
               About
-            </NavLink>
-            <NavLink to="/portfolio" className="text-xl text-gray-400">
+            </a>
+            <a href="#portfolio" className="text-xl text-gray-400">
               Portfolio
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "text-xl text-white font-semibold"
-                  : "text-xl text-gray-400"
-              }
-              to="/contact"
+            </a>
+            <a
+            href="#form"
+              className='text-xl text-gray-400 '
+              
             >
               Contact
-            </NavLink>
+            </a>
 
 
             <a className="text-xl text-gray-400" href="#faq">FAQ</a>
@@ -105,9 +99,9 @@ const Navbar = () => {
 
         {/* Button */}
         <div className="flex md:ml-24 items-center ">
-          <button onClick={()=> navigate('/contact')} className="text-white bg-blue-700 px-6 py-4 rounded-lg hidden md:block font-semibold">
+       <a href="#form"> <button  className="text-white bg-blue-700 px-6 py-4 rounded-lg hidden md:block font-semibold">
             Get in Touch
-          </button>
+          </button></a>  
 
           {/* Hamburger Icon */}
           <button
@@ -152,44 +146,43 @@ const Navbar = () => {
       {/* Dropdown Menu */}
       {isMenuOpen && (
         <motion.div
-          initial={{ backgroundPosition: "0% 50%" }}
-          animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          style={{
-            backgroundImage: "linear-gradient(150deg, #000000, #000080)",
-            backgroundSize: "200% 200%",
-          }}
+            initial={{ y: "-70%" }} // Initial off-screen position
+        animate={{ y: isMenuOpen ? 0 : "-100%" }} // Slide in/out based on visibility
+        transition={{
+          duration: 0,
+          ease: "easeInOut",
+        }}
+        style={{
+        backgroundImage: "linear-gradient(150deg, #000000, #051225)",
+        backgroundSize: "200% 200%",
+      }}
           className="absolute top-18 left-0 w-full h-96 bg-gradient-to-b from-zinc-900 via-blue-900 to-gray-900 flex flex-col gap-2 p-4 transition-transform duration-300 ease-in-out"
         >
-          <Link
+          <a
             onClick={handleDropdownClick}
-            to="/"
+            
             className="text-xl text-gray-300 w-full text-center py-2"
           >
             Home
-          </Link>
-          <Link
+          </a>
+          <a
             onClick={handleDropdownClick}
-            to="/about"
+            href="#about"
             className="text-xl text-gray-300 w-full text-center py-2"
           >
             About
-          </Link>
-          <a className="text-xl text-gray-300 w-full text-center py-2" href="">
+          </a>
+          <a className="text-xl text-gray-300 w-full text-center py-2" href="#portfolio">
             Portfolio
           </a>
-          <Link
+          <a
             onClick={handleDropdownClick}
-            to="/contact"
+            href="#form"
             className="text-xl text-gray-300 w-full text-center py-2"
           >
             Contact
-          </Link>
-          <a className="text-xl text-gray-300 w-full text-center py-2" href="">
+          </a>
+          <a className="text-xl text-gray-300 w-full text-center py-2" href="#faq">
             FAQ
           </a>
 

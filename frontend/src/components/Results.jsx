@@ -48,6 +48,7 @@ const cardData = [
 const Card = ({ imgUrl, title, para, spanText1, spanText2 }) => {
   return (
     <motion.div
+          id="results"
           initial={{x:0}}
           animate={{x:'-100%'}}
           transition={{ease:'linear', repeat: Infinity, duration: 20}}

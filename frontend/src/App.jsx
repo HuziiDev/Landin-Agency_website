@@ -4,11 +4,8 @@ import gsap from 'gsap';
 import {Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Contact from './pages/Contact';
-import lenis from './lenis';
 import { ToastContainer} from 'react-toastify';
-import About from './pages/About';
-import Portfolio from './components/Portfolio';
+
 
 
 
@@ -16,14 +13,7 @@ import Portfolio from './components/Portfolio';
 const App = () => {
 
 
-  // useEffect(() => {
-  //   // Lenis is already initialized and animating in lenis.js
-  //   return () => {
-  //     lenis.destroy(); // Clean up Lenis when the component unmounts
-  //   };
-  // }, []);
-
-
+ 
 
   const cursorRef = useRef(null); // Ref for the custom cursor
 
@@ -65,9 +55,9 @@ const App = () => {
       
        <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        {/* <Route path='/contact' element={<Contact/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/portfolio' element={<Portfolio/>}/>
+        <Route path='/portfolio' element={<Portfolio/>}/> */}
        </Routes>
       
        <Footer/>

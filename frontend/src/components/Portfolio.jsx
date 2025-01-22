@@ -7,7 +7,7 @@ import Starter from './Starter'
 const Portfolio = () => {
   
   return (
-    <div className='bg-black w-full'>
+    <div id='portfolio' className='bg-black w-full'>
 
             <Starter
                          btn1="Portfolio"

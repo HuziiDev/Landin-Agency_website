@@ -2,7 +2,12 @@ import React,{useRef} from "react";
 import emailjs from '@emailjs/browser';
 import {motion} from 'framer-motion'
 import { toast } from "react-toastify"; 
+
+
 const Footer = () => {
+  const scrollToTop = () =>{
+    scroll.scrollToTop();
+  }
 
   const form = useRef();
 
@@ -68,11 +73,11 @@ const Footer = () => {
         <div>
           <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-gray-400">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>FAQs</li>
+           <a> <li>Home</li></a>
+          <a href=""> <li>Services</li></a>
+           <a href=""> <li>About Us</li></a>
+           <a href=""> <li>Contact</li></a>
+           <a  href=""> <li>FAQs</li></a>
           </ul>
         </div>
 

@@ -27,7 +27,7 @@ const ContactForm = () => {
     
     <div
      id="form"
-     className="flex flex-col md:flex-row justify-center items-center bg-black min-h-screen mt-24 gap-y-16 md:gap-x-24">
+     className="flex flex-col md:flex-row justify-center items-center bg-black min-h-screen mt-12 gap-y-16 md:gap-x-24">
       {/* Form Section */}
       <form ref={form} onSubmit={sendEmail} className="w-[90%] md:w-[70%] max-w-[800px] bg-neutral-950 border-[0.2px] border-white/20 shadow-lg rounded-xl p-8">
         {/* First Name and Last Name */}

@@ -13,6 +13,7 @@ import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
 import AboutUs from '../components/AboutUs'
 import Faq from '../components/Faq'
+import ContactForm from '../components/ContactForm'
 
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
         <JoinUs/>
         <Testimonials/>
          <Faq/> 
+         <ContactForm/>
 
       
      
