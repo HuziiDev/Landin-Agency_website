@@ -172,7 +172,9 @@ const Navbar = () => {
           >
             About
           </a>
-          <a className="text-xl text-gray-300 w-full text-center py-2" href="#portfolio">
+          <a
+           onClick={handleDropdownClick}
+           className="text-xl text-gray-300 w-full text-center py-2" href="#portfolio">
             Portfolio
           </a>
           <a
@@ -182,13 +184,15 @@ const Navbar = () => {
           >
             Contact
           </a>
-          <a className="text-xl text-gray-300 w-full text-center py-2" href="#faq">
+          <a 
+          onClick={handleDropdownClick}
+          className="text-xl text-gray-300 w-full text-center py-2" href="#faq">
             FAQ
           </a>
 
-          <button className="text-white bg-blue-700 px-8 py-2 rounded-lg font-semibold mx-auto w-[90%]">
+        <a href="#form">  <button className="text-white bg-blue-700 px-8 py-2 rounded-lg font-semibold mx-auto w-[90%]">
             Get in Touch
-          </button>
+          </button> </a>
         </motion.div>
       )}
     </motion.div>

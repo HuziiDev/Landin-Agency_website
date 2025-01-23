@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ServicesCard = ({ img1, title1, title2, desc }) => {
+const ServicesCard = ({ img1, title1, title2, desc , rate}) => {
   return (
     <div className="card text-white max-w-[90%] md:max-w-[45%] lg:max-w-[30%] flex flex-col justify-center bg-custom-blue-gradient shadow-md shadow-blue-700 rounded-xl mb-6 mt-6 mx-auto">
       {/* Icon Section */}
@@ -30,7 +30,7 @@ const ServicesCard = ({ img1, title1, title2, desc }) => {
       <div className="icons flex flex-wrap gap-4 pl-4 pt-4">
         <div className="bg-transparent border-[0.2px] flex rounded-lg border-neutral-600">
           <p className="font-semibold px-2 py-2">
-            $2500 <span className="text-neutral-400 font-semibold">/Project</span>
+            {rate} <span className="text-neutral-400 font-semibold">/Project</span>
           </p>
         </div>
         <div className="bg-transparent border-[0.2px] flex rounded-lg border-neutral-600">
