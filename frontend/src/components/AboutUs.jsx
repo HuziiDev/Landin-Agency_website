@@ -8,7 +8,7 @@ const AboutUs = () => {
   const navigate = useNavigate()
   return (
     <div id='about' className=" bg-black w-full md:min-h-screen px-4 sm:px-[5vw] md:px-[7vw]">
-      <div className="flex flex-col lg:flex-row lg:gap-10 justify-around items-center pt-44 p-4 lg:p-0">
+      <div  className="flex flex-col lg:flex-row lg:gap-10 justify-around items-center pt-44 p-4 lg:p-0">
         {/* Image Section */}
         <div className="bg-neutral-900  border-[1px] border-white/20 overflow-hidden w-full lg:w-[35%] flex items-center justify-center mt-6 lg:mt-24 rounded-xl  md:ml-[30px] min-w-[250px]">
         <div className='relative'>
@@ -84,11 +84,11 @@ const AboutUs = () => {
 
           {/* Buttons Section */}
           <div className="flex flex-col lg:flex-row mt-10 items-center lg:gap-10 gap-6">
-            <button
-            onClick={()=> navigate('/about')}
+           <a href="#about"> <button
+            
              className="bg-blue-700 px-5 rounded-lg py-3 w-full lg:w-auto shadow-md shadow-blue-700">
               View about Landin
-            </button>
+            </button> </a>
 
             <div className="flex flex-col items-center gap-2">
               <div className="flex gap-1">

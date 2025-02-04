@@ -5,9 +5,12 @@ import { toast } from "react-toastify";
 
 
 const Footer = () => {
-  const scrollToTop = () =>{
-    scroll.scrollToTop();
-  }
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+       // Smooth scrolling
+    });
+  };
 
   const form = useRef();
 
@@ -73,22 +76,23 @@ const Footer = () => {
         <div>
           <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-gray-400">
-           <a> <li>Home</li></a>
-          <a href=""> <li>Services</li></a>
-           <a href=""> <li>About Us</li></a>
-           <a href=""> <li>Contact</li></a>
-           <a  href=""> <li>FAQs</li></a>
+           
+           <a className="cursor-pointer" onClick={scrollToTop} >  <li>Home</li> </a>
+          <a href="#services"> <li>Services</li></a>
+           <a href="#about"> <li>About Us</li> </a>
+           <a href="#form"> <li>Contact</li></a>
+           <a  href="#faq"> <li>FAQs</li></a>
           </ul>
         </div>
 
         {/* Social Links */}
-        <div>
+        <div >
           <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
           <ul className="space-y-2 text-gray-400">
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>LinkedIn</li>
+          <a href="https://x.com/landin_agency">  <li>Twitter</li> </a>
+           <a href="https://www.instagram.com/landin_web_agency/"><li>Facebook</li> </a> 
+           <a href="https://www.instagram.com/landin_web_agency/"><li>Instagram</li> </a> 
+           <a href=""> <li>LinkedIn</li> </a>
           </ul>
         </div>
 

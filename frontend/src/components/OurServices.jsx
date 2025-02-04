@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import Starter from './Starter'
 const OurServices = () => {
   return (
-    <div className='w-full bg-black'>
+    <div id='services' className='w-full bg-black'>
 
         <Starter
             btn1="Our Services"

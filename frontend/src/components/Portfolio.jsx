@@ -17,7 +17,7 @@ const Portfolio = () => {
                                to create without boundaries."
                         isBtn={true}
                         btn2="View About Landin"
-                        path='/about'
+                        path='#about'
             />
         
 

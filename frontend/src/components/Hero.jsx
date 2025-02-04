@@ -62,22 +62,23 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
-            <motion.button
-            onClick={()=> navigate('/contact')}
+           <a href="#form"><motion.button
+            
               initial={{opacity:0}}
             animate={{opacity:1}}
              transition={{duration:2,ease:"anticipate" }}
              className="bg-white rounded-lg font-semibold px-6 sm:px-8 py-3 sm:py-4 text-black mt-4 sm:mt-6">
               Connect with us
-            </motion.button>
-            <motion.button
-            onClick={()=> navigate('/about')}
+            </motion.button></a> 
+
+           <a href="#about"> <motion.button
+         
              initial={{opacity:0}}
             animate={{opacity:1}}
              transition={{duration:2,ease:"anticipate" }}
              className="bg-neutral-300/20 rounded-lg font-semibold px-6 sm:px-8 py-3 sm:py-4 text-white mt-4 sm:mt-6">
               What is landin?
-            </motion.button>
+            </motion.button> </a>
           </div>
         </motion.div>
           

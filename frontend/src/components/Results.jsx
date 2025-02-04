@@ -91,7 +91,7 @@ const Results = () => {
                         email marketing platform."
                         isBtn={true}
                         btn2="Book a 15-min Call"
-                        path='/contact'
+                        path='#form'
               />
           
 

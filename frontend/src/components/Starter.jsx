@@ -32,9 +32,9 @@ const Starter = ({btn1,title1,title2,desc,btn2,isBtn,path}) => {
               className='pt-4 px-5 text-neutral-400 text-base pl-12'>{desc}</motion.p>
 
                 {isBtn &&
-                  <button onClick={()=> navigate(`${path}`)} className="text-white mt-6 bg-blue-700 px-4 py-3 mb-8 rounded-lg font-semibold shadow-md shadow-blue-700">
+                 <a href={path}> <button className="text-white mt-6 bg-blue-700 px-4 py-3 mb-8 rounded-lg font-semibold shadow-md shadow-blue-700">
                 {btn2}
-                  </button>
+                  </button> </a>
                 } 
     </div>
   )
